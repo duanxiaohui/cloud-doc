@@ -1,0 +1,76 @@
+{
+  "name": "cloud-doc",
+  "version": "0.1.0",
+  "description": "云文档",
+  "author": {
+    "name": "duanxiaohui",
+    "email": "duanxiaohui@sunlands.com"
+  },
+  "main": "main.js",
+  "private": true,
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.25",
+    "@fortawesome/free-brands-svg-icons": "^5.11.2",
+    "@fortawesome/free-solid-svg-icons": "^5.11.2",
+    "@fortawesome/react-fontawesome": "^0.1.6",
+    "bootstrap": "^4.3.1",
+    "classnames": "^2.2.6",
+    "electron-is-dev": "^1.1.0",
+    "electron-store": "^5.0.0",
+    "node-sass": "^4.12.0",
+    "normalizr": "^3.4.1",
+    "react": "^16.10.2",
+    "react-dom": "^16.10.2",
+    "react-simplemde-editor": "^4.1.0",
+    "uuid": "^3.3.3"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "dev": "concurrently \"wait-on http://localhost:3000 && electron .\" \"cross-env BROWSER=none npm start\"",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder",
+    "prepack": "npm run build"
+  },
+  "homepage": "./",
+  "build": {
+    "appId": "cloudDoc",
+    "productName": "云文档",
+    "copyright": "Copyright © year ${author}",
+    "files": [
+      "build/**/*",
+      "node_modules/**/*",
+      "settings/**/*",
+      "package.json",
+      "main.js",
+      "./src/menuTemplate.js",
+      "./src/AppWindow.js"
+    ],
+    "extends": null
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "concurrently": "^5.0.0",
+    "cross-env": "^6.0.3",
+    "electron": "^7.0.0",
+    "electron-builder": "^21.2.0",
+    "react-scripts": "^3.2.0",
+    "wait-on": "^3.3.0"
+  }
+}
