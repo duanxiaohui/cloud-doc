@@ -42,7 +42,7 @@
   "homepage": "./",
   "build": {
     "appId": "cloudDoc",
-    "productName": "七牛云文档",
+    "productName": "云文档",
     "copyright": "Copyright © 2019 ${author}",
     "files": [
       "build/**/*",
@@ -93,7 +93,7 @@
       ],
       "icon": "assets/icon.ico",
       "artifactName": "${productName}-Web-Setup-${version}.${ext}",
-      "publisherName": "Viking Zhang"
+      "publisherName": "duanxiaohui"
     },
     "nsis": {
       "allowToChangeInstallationDirectory": true,
@@ -122,6 +122,7 @@
     "electron": "^7.0.0",
     "electron-builder": "^21.2.0",
     "react-scripts": "^3.2.0",
-    "wait-on": "^3.3.0"
+    "wait-on": "^3.3.0",
+    "webpack-cli": "^3.3.9"
   }
 }

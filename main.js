@@ -7,7 +7,7 @@ let mainWindow
 let settingsWindow
 
 app.on('ready', () => {
-    const ulrLocation = isDev ? 'http://localhost:3000' : `file://${path.join(__dirname, './build/index.html')}`
+    const ulrLocation = isDev ? 'http://localhost:3000' : `file://${path.join(__dirname, './index.html')}`
     const mainWindowConfig = {
         width: 1024,
         height: 680,
